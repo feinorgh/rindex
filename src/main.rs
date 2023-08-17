@@ -16,6 +16,10 @@ fn is_image_file(entry: &DirEntry) -> bool {
 
 fn main() {
     let args: Vec<String> = env::args().collect();
+    if args.len() < 2 {
+        eprintln!("ERROR: No directory given, exiting");
+        std::process::exit(1);
+    }
     let path = &args[1];
     for entry in WalkDir::new(path)
             .into_iter()
