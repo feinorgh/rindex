@@ -6,7 +6,7 @@ readme = "README.md"
 homepage = "https://github.com/feinorgh/rindex"
 license = "GPL-3.0"
 license-file = "LICENSE"
-categories = "command-line-utilities"
+categories = ["command-line-utilities"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
